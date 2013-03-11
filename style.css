@@ -1,0 +1,65 @@
+@import url(animate.css);
+
+#onclick{
+	display: none;
+}
+#onclick a{
+	text-decoration: none;
+}
+#onclick:target{
+	z-index: 100;
+	left: 80%;
+	display: block;
+	top: 13%;
+	width: 200px;
+	height: 100px;
+	position: absolute;
+	background-color: red;
+
+
+}
+.navbar{
+	width: 100%;
+	height: 50px;
+	position: absolute;
+	left: 0px;
+	background: #006e2e; /* Old browsers */
+background: -moz-linear-gradient(top,  #006e2e 0%, #006e2e 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#006e2e), color-stop(100%,#006e2e)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #006e2e 0%,#006e2e 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #006e2e 0%,#006e2e 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #006e2e 0%,#006e2e 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #006e2e 0%,#006e2e 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#006e2e', endColorstr='#006e2e',GradientType=0 ); /* IE6-9 */
+
+
+}
+.navbar a{
+
+	padding-left: 10px;
+	padding-right: 10px;
+	float:right;
+	text-decoration: none;
+}
+.navbar ul li{
+	display: inline;
+}
+
+#onclick .box{
+	display: none;
+}
+
+#onclick:target .box{
+	display: block;
+	z-index: 1;
+	left: 160px;
+	width: 30px;
+	height: 30px;
+	position: relative;
+	transform:rotate(45deg);
+	-web-transform:rotate(45deg);
+	-o-transform:rotate(45deg);
+	-moz-transform:rotate(45deg);
+	background-color: black;
+
+}
